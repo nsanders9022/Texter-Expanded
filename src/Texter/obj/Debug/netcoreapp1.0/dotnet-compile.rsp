@@ -211,9 +211,14 @@
 --resource:"C:\Users\epicodus\Desktop\Texter\src\Texter\obj\Debug\netcoreapp1.0\Texterdotnet-compile.deps.json",Texter.deps.json
 C:\Users\epicodus\Desktop\Texter\src\Texter\Program.cs
 C:\Users\epicodus\Desktop\Texter\src\Texter\Startup.cs
+C:\Users\epicodus\Desktop\Texter\src\Texter\Controllers\AccountController.cs
 C:\Users\epicodus\Desktop\Texter\src\Texter\Controllers\HomeController.cs
 C:\Users\epicodus\Desktop\Texter\src\Texter\Migrations\20170508173639_Initial.cs
 C:\Users\epicodus\Desktop\Texter\src\Texter\Migrations\20170508173639_Initial.Designer.cs
+C:\Users\epicodus\Desktop\Texter\src\Texter\Migrations\20170508175918_UserAuthen.cs
+C:\Users\epicodus\Desktop\Texter\src\Texter\Migrations\20170508175918_UserAuthen.Designer.cs
+C:\Users\epicodus\Desktop\Texter\src\Texter\Migrations\20170508181431_userToContact.cs
+C:\Users\epicodus\Desktop\Texter\src\Texter\Migrations\20170508181431_userToContact.Designer.cs
 C:\Users\epicodus\Desktop\Texter\src\Texter\Migrations\TexterContextModelSnapshot.cs
 C:\Users\epicodus\Desktop\Texter\src\Texter\Models\ApplicationUser.cs
 C:\Users\epicodus\Desktop\Texter\src\Texter\Models\Contact.cs
@@ -221,3 +226,5 @@ C:\Users\epicodus\Desktop\Texter\src\Texter\Models\EnvironmentVariables.cs
 C:\Users\epicodus\Desktop\Texter\src\Texter\Models\Message.cs
 C:\Users\epicodus\Desktop\Texter\src\Texter\Models\Phone.cs
 C:\Users\epicodus\Desktop\Texter\src\Texter\Models\TexterContext.cs
+C:\Users\epicodus\Desktop\Texter\src\Texter\ViewModels\LoginViewModel.cs
+C:\Users\epicodus\Desktop\Texter\src\Texter\ViewModels\RegisterViewModel.cs

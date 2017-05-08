@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <script src="~/js/jquery-3.2.1.js" type="text/javascript"></script>
+    <script src="~/js/scripts.js" type="text/javascript"></script>
+    <title></title>
+</head>
+<body>
+    <nav>
+        @Html.ActionLink("Home", "Index", "Home")
+        @Html.ActionLink("Login", "Login", "Account")
+        @Html.ActionLink("Register", "Register", "Account")
+    </nav>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>

@@ -18,7 +18,20 @@ namespace Texter.Models
         public string ImageUrl { get; set; }
         public int Rating { get; set; }
         public string Notes { get; set; }
+        public virtual ApplicationUser User { get; set; }
         public virtual ICollection<Phone> Phones { get; set; }
+
+        public Contact() { }
+
+        public Contact(string name, string address, string imageUrl, string notes, int id = 0)
+        {
+            Name = name;
+            Address = address;
+            ImageUrl = imageUrl;
+            Notes = notes;
+            Rating = 0;
+            ContactId = id;
+        }
 
     }
 }

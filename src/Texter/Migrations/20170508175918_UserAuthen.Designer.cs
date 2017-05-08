@@ -8,9 +8,10 @@ using Texter.Models;
 namespace Texter.Migrations
 {
     [DbContext(typeof(TexterContext))]
-    partial class TexterContextModelSnapshot : ModelSnapshot
+    [Migration("20170508175918_UserAuthen")]
+    partial class UserAuthen
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "1.0.0-rtm-21431")
@@ -187,11 +188,7 @@ namespace Texter.Migrations
 
                     b.Property<int>("Rating");
 
-                    b.Property<string>("UserId");
-
                     b.HasKey("ContactId");
-
-                    b.HasIndex("UserId");
 
                     b.ToTable("Contacts");
                 });
@@ -251,13 +248,6 @@ namespace Texter.Migrations
                         .WithMany("Roles")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
-                });
-
-            modelBuilder.Entity("Texter.Models.Contact", b =>
-                {
-                    b.HasOne("Texter.Models.ApplicationUser", "User")
-                        .WithMany()
-                        .HasForeignKey("UserId");
                 });
 
             modelBuilder.Entity("Texter.Models.Phone", b =>

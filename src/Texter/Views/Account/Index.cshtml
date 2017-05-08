@@ -1,0 +1,30 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using System.Security.Claims
+
+<h2>Texter</h2>
+<hr />
+@*Displays the user's name if they are logged in*@
+@if (User.Identity.IsAuthenticated)
+{
+    <h4>Hello @User.Identity.Name!</h4>
+
+}
+else
+{
+    <p>@Html.ActionLink("Register", "Register")</p>
+    <p>@Html.ActionLink("Log in", "Login")</p>
+}
+
+<hr />
+
+<h2>Add Contact</h2>
+<form id="add-contact">
+    <input name="contactName" type="text" id="contactName" placeholder="Contact Name"/> 
+    <input name="address" type="text" id="address" placeholder="Address"/>
+    <input type="text" name="imageUrl" id="imageUrl" placeholder="Image Url" />
+    <input type="text" name="notes"  id="notes" placeholder="Notes" />
+    <button type="submit">Submit</button>
+</form>
