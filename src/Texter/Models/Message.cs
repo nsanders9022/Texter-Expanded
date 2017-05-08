@@ -12,7 +12,7 @@ namespace Texter.Models
     public class Message
     {
         public string To { get; set; }
-        public string From { get; set; }
+        public string From = "+19093216348";
         public string Body { get; set; }
         public string Status { get; set; }
 
@@ -35,7 +35,10 @@ namespace Texter.Models
         {
             var client = new RestClient("https://api.twilio.com/2010-04-01");
             var request = new RestRequest("Accounts/" + EnvironmentVariables.AccountSid + "/Messages", Method.POST);
-            request.AddParameter("To", To);
+
+            var parsedTo = To.Replace("-", "").Replace(".", "").Replace(")", "").Replace("(", "").Replace(" ", "");
+
+            request.AddParameter("To", "+1" + parsedTo);
             request.AddParameter("From", From);
             request.AddParameter("Body", Body);
             client.Authenticator = new HttpBasicAuthenticator(EnvironmentVariables.AccountSid, EnvironmentVariables.AuthToken);
