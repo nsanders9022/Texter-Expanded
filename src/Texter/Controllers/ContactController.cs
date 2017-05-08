@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Texter.Models;
 using Microsoft.AspNetCore.Identity;
 using System.Security.Claims;
+using Newtonsoft.Json;
 
 namespace Texter.Controllers
 {
@@ -26,6 +27,7 @@ namespace Texter.Controllers
             return View();
         }
 
+        [HttpPost]
         public async Task<IActionResult> Create(string contactName, string address, string imageUrl, string notes)
         {
             var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
@@ -35,7 +37,13 @@ namespace Texter.Controllers
             newContact.User = currentUser;
             _db.Contacts.Add(newContact);
             _db.SaveChanges();
-            return View();
+            return Json(newContact);
+        }
+
+        public IActionResult GetAll()
+        {
+            var resultList = _db.Contacts.ToList();
+            return Json(resultList);
         }
     }
 }
