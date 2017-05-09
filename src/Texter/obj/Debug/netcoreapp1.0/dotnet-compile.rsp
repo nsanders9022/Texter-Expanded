@@ -222,6 +222,7 @@ C:\Users\epicodus\Desktop\Texter\src\Texter\Migrations\20170508181431_userToCont
 C:\Users\epicodus\Desktop\Texter\src\Texter\Migrations\20170508181431_userToContact.Designer.cs
 C:\Users\epicodus\Desktop\Texter\src\Texter\Migrations\TexterContextModelSnapshot.cs
 C:\Users\epicodus\Desktop\Texter\src\Texter\Models\ApplicationUser.cs
+C:\Users\epicodus\Desktop\Texter\src\Texter\Models\CatFact.cs
 C:\Users\epicodus\Desktop\Texter\src\Texter\Models\Contact.cs
 C:\Users\epicodus\Desktop\Texter\src\Texter\Models\EnvironmentVariables.cs
 C:\Users\epicodus\Desktop\Texter\src\Texter\Models\Message.cs

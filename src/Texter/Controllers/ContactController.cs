@@ -42,6 +42,7 @@ namespace Texter.Controllers
 
         public IActionResult GetAll()
         {
+            //Contact.GetContacts();
             var resultList = _db.Contacts.ToList();
             return Json(resultList);
         }
